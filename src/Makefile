@@ -3,7 +3,7 @@ TARGET		= Hello.x
 CXX			= g++
 CXXFLAGS    =
 LINKER		= g++
-LFLAGS		=
+LFLAGS		= 
 
 BINDIR		= ../bin
 

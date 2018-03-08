@@ -5,6 +5,8 @@
 #include <vector>
 #include <iterator>
 #include <cmath>
+#include <stdio.h>
+#include <stdlib.h>
 
 #include <unistd.h>		//using getopt()
 
@@ -41,6 +43,7 @@ vector<string> split(const string &s, char delim) {
 
 int main(int argc, char **argv)
 {
+	char* pEnd;
     int opt;
     string inputfilePath;
     while ((opt = getopt(argc,argv,"i:")) != EOF)
@@ -65,16 +68,16 @@ int main(int argc, char **argv)
 		while(getline(openFile, line)){
 			vector<string> opt = split(line, ' ');
 			if (!(opt[0].compare("a"))){
-				input.a = stod(opt[1]);
+				input.a = (double)atof(opt[1].c_str());
 				cout << " a is " << input.a << endl;
 			} else if (!(opt[0].compare("b"))){
-                input.b = stod(opt[1]);
+                input.b = atof(opt[1].c_str());
                 cout << " b is " << input.b << endl;
             } else if (!(opt[0].compare("c"))){
-                input.c = stod(opt[1]);
+                input.c = atof(opt[1].c_str());
                 cout << " c is " << input.c << endl;
             } else if (!(opt[0].compare("d"))){
-                input.d = stod(opt[1]);
+                input.d = atof(opt[1].c_str());
                 cout << " d is " << input.d << endl;
             } else {
 				cout << "Error Invalid value name :: " << opt[0] << endl;
