@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/sp-edison/cpp_example_onedplot.svg?branch=master)](https://travis-ci.org/sp-edison/cpp_example_onedplot)
 
 # C++ language sample - sin()
 
