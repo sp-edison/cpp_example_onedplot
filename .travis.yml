@@ -1,5 +1,14 @@
 language : cpp
 sudo: false
 
+compiler:
+  - clang
+  - gcc
 
-script : cd src && make all && cd ../bin && ./Sin.x -i ../inp/input.dat
+os:
+- linux
+ruby: 2.2.0
+
+
+script : 
+- cd src && make all && cd ../bin && ./Sin.x -i ../inp/input.dat
