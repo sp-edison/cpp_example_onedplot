@@ -2,7 +2,6 @@ language : cpp
 sudo: false
 
 compiler:
-  - clang
   - gcc
 
 os:
@@ -11,4 +10,7 @@ ruby: 2.2.0
 
 
 script : 
-- cd src && make all && cd ../bin && ./Sin.x -i ../inp/input.dat
+- cd src
+-  make all 
+-  cd ../bin 
+- ./Sin.x -i ../inp/input.dat
