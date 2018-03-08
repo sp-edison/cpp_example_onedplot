@@ -28,3 +28,6 @@ script :
 -  make all 
 -  cd ../bin 
 - ./Sin.x -i ../inp/input.dat
+- cd result
+- ls -al ./
+
