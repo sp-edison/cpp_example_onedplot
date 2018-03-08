@@ -1,4 +1,4 @@
-TARGET		= Hello.x
+TARGET		= Sin.x
 
 CXX			= g++
 CXXFLAGS    =
