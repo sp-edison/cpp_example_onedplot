@@ -1,0 +1,5 @@
+language : cpp
+sudo: false
+
+
+script : cd src && make all && cd ../bin && ./Sin.x -i ../inp/input.dat
