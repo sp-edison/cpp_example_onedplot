@@ -50,7 +50,7 @@ int main(int argc, char **argv)
     switch (opt)
     {
         case 'i':
-            cout << "Succeed to open inputfile. Path: "<< optarg <<endl ;
+            cout << "Succeed to open inputfile Path: "<< optarg <<endl ;
             inputfilePath = optarg;
             break;
         default:
